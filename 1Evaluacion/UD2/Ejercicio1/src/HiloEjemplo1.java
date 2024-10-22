@@ -1,6 +1,5 @@
 public class HiloEjemplo1 {
 
-
     public static void main(String[] args) {
         Hilo a = new Hilo("Hilo 1");
         Hilo b = new Hilo("Hilo 2");
