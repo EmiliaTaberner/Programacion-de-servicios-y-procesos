@@ -1,4 +1,4 @@
-# Ejecicios UD.2 INTRODUCCIÓNALOSHILOS (PSP)
+# Ejecicios UD.2 INTRODUCCIÓN A LOS HILOS (PSP)
 
 ### 1 Ejercicio.
 ````
@@ -219,8 +219,4 @@
 ### 8 Ejercicio.
 ````
         Utilizando funciones lambda creamos hilos. Uno que me genere un listado de números pares y otro de impares.
-````
-### 9 Ejercicio.
-````
-
 ````
