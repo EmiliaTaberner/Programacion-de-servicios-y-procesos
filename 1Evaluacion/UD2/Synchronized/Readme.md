@@ -66,16 +66,69 @@
 ````
 ### 3 Ejercicio.
 ````
+    Vamos a crear un programa que los Empleados digan buenos dias cuando entre el jefe...
+    Para ello tendremos tres clases: 
+    
+    • La clase Principal 
+    
+    • La clase Empleado 
+        String nombre; 
+        Saludo saludo; 
+        boolean esJefe; 
+    
+    • La clase saludo extends Thread El método run() comprobará si es el hilo jefe o empleado para saludar... 
         
+        Con los métodos: 
+            • SaludoEmpleado(String nombre) 
+            • Saludo Jefe(String nom)    
 
 ````
 ### 4 Ejercicio.
 ````
+    Crearemos 2 tipos de hilos: 
+    • uno Productor que pondrá algunos datos (por ejemplo, un número entero) en un objeto dado (lo llamaremos 
+      DatoCompartido), 
+    • y otro Consumidor que obtendrá estos datos. 
+    
+    La clase DatoCompartido será: 
+    public class DatoCompartido{ 
+        int dato; 
+        public int obtener(){ return dato; } 
+        public void poner(intnuevoDato){ dato=nuevoDato; } 
+    } 
+    
+    La ejecución debe de ser algo así: 
+    Poner(1) 
+    Obtener(1) 
+    Poner(2) 
+    Obtener(2) 
+    ... 
+    
+    •Modificar el código para que el productor introduzca los elementos en un ArrayList datos = new ArrayList<Integer> 
+    (limite); y el consumidor los vaya borrando datos.remove(.... 
         
     
 ````
 ### 5 Ejercicio.
 ````
+     Crea un proyecto llamado Lavavajillas. Vamos a simular el proceso de lavado de platos en casa, cuando alguien 
+     lava los platos y otro más los seca. 
         
+        Crea las siguientes clases: 
+            • Una clase Plato con solo un atributo entero: el número de plato (para identificar los diferentes platos). 
+            
+            • Una clase PilaPlatos que almacenará hasta 5 platos. Tendrá un método lavar que pondrá un plato en la pila 
+              (si hay espacio disponible) y un método secar que cogerá un plato de la pila (si hay alguno). Tal vez 
+              necesites un parámetro Plato en el método lavar para añadir un plato a la pila. 
+        
+            • Un hilo Friega que recibirá un número N como parámetro y un objeto de tipo PilaPlatos. En su método run 
+              pondrá (lavará) N platos en la pila, con una pausa de 50ms entre cada plato. 
+            
+            • Un hilo Seca que recibirá un número N como parámetro y un objeto de tipo PilaPlatos. En su método run, 
+              sacará (secará) N platos de la pila, con una pausa de 100ms entre cada plato. 
+            
+            • La clase principal creará el objeto PilaPlatos y un hilo de cada tipo (Friega y Seca). Tendrán que 
+              lavar/secar 20 platos coordinadamente.
+              
 
 ````
