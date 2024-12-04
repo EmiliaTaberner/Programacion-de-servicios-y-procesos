@@ -17,9 +17,9 @@ public class LanzadorMayusculas {
         processBuilder.directory(directory);
         Process process = processBuilder.start();
 
-        OutputStream os = process.getOutputStream();
-        os.write(cadena.getBytes());
-        os.flush();
+//        OutputStream os = process.getOutputStream();
+//        os.write(cadena.getBytes());
+//        os.flush();
 
         try {
             InputStream is = process.getInputStream();
@@ -28,6 +28,7 @@ public class LanzadorMayusculas {
             while ((c = is.read()) != -1){
                 System.out.print((char)c);
             }
+            sc.close();
             is.close();
 
         }catch (Exception e) {

@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class ProcessListPNG {
     public static void main(String[] args) throws IOException {
 
-
         Scanner sc = new Scanner(System.in);
         System.out.print("Introduzca la ruta para mostrar una lista de todas las imágenes PNG encontradas en ella: ");
         String directory = sc.nextLine();
